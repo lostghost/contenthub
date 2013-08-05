@@ -1,4 +1,8 @@
 
+/**
+ * Application server initialization
+ */
+
 var http = require('http')
   , app  = require('./app');
 

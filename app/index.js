@@ -1,11 +1,15 @@
 
+/**
+ * Application instantiation and configuration
+ */
+
 var express = require('express');
 var app = express();
 
-// Config
+// Load application configuration
 require('./config')(app);
 
-// Routes
+// Load application routes
 require('./routes')(app);
 
 module.exports = app;
