@@ -3,9 +3,9 @@ var express = require('express');
 var app = express();
 
 // Config
-require('./config')(app)
+require('./config')(app);
 
 // Routes
-require('./routes')(app)
+require('./routes')(app);
 
-module.exports = app
+module.exports = app;
