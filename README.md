@@ -1,8 +1,8 @@
 # ContentHub
 
-ContentHub is the core central API for a new kind of content management system.
-
 [![Build Status](https://travis-ci.org/lostghost/contenthub.png)](https://travis-ci.org/lostghost/contenthub)
+
+ContentHub is the core central API for a new kind of content management system.
 
 An evolution in the development in web application over the past several years has changed the way that many websites are constructed and has created a new generation of powerful, web based applications. New frameworks enable the creation of powerful separation of views and controllers from the underlying data models. This separation makes the structure of business objects clear, visible and maintainable, but only within the relm of developers with source code access.
 
