@@ -1,8 +1,6 @@
 HOST: http://contenthub-staging.herokuapp.com/
 
 --- ContentHub ---
----
----
 
 --
 Class Resources
@@ -18,7 +16,7 @@ Create a new class
 POST /classes
 > Content-Type: application/json
 { "name":"deals", "description":"description" }
-< 200
+< 201
 < Content-Type: application/json
 { "id":"1234", "name":"deals", "description":"description" }
 
@@ -28,3 +26,11 @@ GET /classes/{name}
 < Content-Type: application/json
 { "id":"1234", "name":"deals", "description":"description" }
 
+--
+Status Resource
+--
+Show application status
+GET /status
+< 200
+< Content-Type: application/json
+{ "result":"success" }
