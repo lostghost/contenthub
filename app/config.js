@@ -12,7 +12,7 @@ module.exports = function(app){
 
   // development only
   app.configure('development', function(){
-    app.set('mongodb_server', 'mongodb://localhost/contenthub');
+    app.set('mongodb_server', 'mongodb://127.0.0.1/contenthub');
   });
 
   // Middleware
