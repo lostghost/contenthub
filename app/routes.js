@@ -5,13 +5,13 @@
 
 module.exports = function(app){
   // Controllers
-  var classes = require('./controllers/classcontroller')(app)
+  var types = require('./controllers/typecontroller')(app)
     , status  = require('./controllers/statuscontroller')(app);
 
   // Classes resources
-  app.get('/classes', classes.index);
-  app.post('/classes', classes.create);
-  app.get('/classes/:class', classes.show);
+  app.get('/types', types.index);
+  app.post('/types', types.create);
+  app.get('/types/:class', types.show);
 
   // Status resources
   app.get('/status', status.show);

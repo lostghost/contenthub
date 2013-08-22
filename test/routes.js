@@ -2,33 +2,34 @@ var request = require('supertest')
   , app     = require('../app')
   , assert  = require("assert");
 
-// Classes index
-describe('GET /classes', function(){
+// Types index
+describe('GET /types', function(){
   it('should respond with json', function(done){
     request(app)
-      .get('/classes')
+      .get('/types')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200, done);
   });
 });
 
-// Classes create
-describe('POST /classes', function(){
+// Types create
+describe('POST /types', function(){
   it('should respond with json', function(done){
     request(app)
-      .post('/classes')
+      .post('/types')
       .set('Accept', 'application/json')
+      .send({ name: 'deal', description: 'Deal' })
       .expect('Content-Type', /json/)
       .expect(201, done);
   });
 });
 
-// Classes show
-describe('GET /classes/:class', function(){
+// Types show
+describe('GET /types/:type', function(){
   it('should respond with json', function(done){
     request(app)
-      .get('/classes/test')
+      .get('/types/test')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200, done);
